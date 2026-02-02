@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Valentine?</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      background: #ffe6ee;
+      margin-top: 100px;
+    }
+    #no {
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Will you be my Valentine? 💖</h1>
+
+<button onclick="alert('Yay! ❤️')">Yes</button>
+<button id="no" onmouseover="move()">No</button>
+
+<script>
+function move() {
+  const btn = document.getElementById("no");
+  btn.style.left = Math.random() * 80 + "vw";
+  btn.style.top = Math.random() * 80 + "vh";
+}
+</script>
+
+</body>
+</html>
